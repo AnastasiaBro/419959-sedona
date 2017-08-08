@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Бронникова](https://up.htmlacademy.ru/htmlcss/18/user/419959).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/nikolamarkelov).
 
 ---
 
