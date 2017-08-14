@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="main-header">
-	  <nav class="main-navigation">
 	    <a class="main-header-logo">
-	     <img src="img/index-logo.svg" width="150" height="150" alt="Логотип Седона">
+	     <img src="img/index-logo.svg" width="150" height="150" alt="Логотип Седона">   <!--лого за навигацией-->
 		</a> 
+	    <nav class="main-navigation">
 	      <ul class="site-navigation">
 		   <li><a href="info.html">Информация</a></li>
 		   <li><a href="photo-video.html">Фото и видео</a></li>
@@ -24,56 +24,56 @@
 	   
 	   <section class="features">
 	      <img src="img/content-sedona.svg" width="1200" height="1000" alt="Основная Седона">
-		  <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-		  <h3>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h3>
-		  <span class="1-real-city">
-		      <h2>Настоящий городок</h2>
-		      <p>-№1-</p> <!-- или этот и следующий теги h3? -->
-		      <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-		  </span>
+		  <h2 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+		  <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>     <!--теперь текст-->
+		  <div class="1-real-city">
+		      <h3 class="title">Настоящий городок</h3>        <!--заголовки h3-->
+		      <p>-№1-</p>
+		      <p class="text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+		  </div>
 		  <img src="img/city-1.svg" width="800" height="250" alt="Город Седона-1">
 		  <ul class="features-list">
 		     <li class="feature-item">
-			   <h2>Жилье</h2>
-			   <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+			   <h3 class="title">Жилье</h3>          <!--заголовки h3-->
+			   <p class="text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 			 </li>
 			 <li class="feature-item">
-			   <h2>Еда</h2>
-			   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+			   <h3 class="title">Еда</h3>             <!--заголовки h3-->
+			   <p class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 			 </li>
 			 <li class="feature-item">
-			   <h2>Сувениры</h2>
-			   <p>Не только китайского, но и местного производства!</p>
+			   <h3>Сувениры</h3>       <!--заголовки h3-->
+			   <p class="text">Не только китайского, но и местного производства!</p>
 			 </li>
 		  </ul>
 		  <img src="img/city-2.svg" width="800" height="250" alt="Город Седона-2">
-		  <span class="2-bridge">
-		      <h2>Там есть мост дьявола</h2>
+		  <div class="2-bridge">
+		      <h3 class="title">Там есть мост дьявола</h3>        <!--заголовки h3-->
 		      <p>-№2-</p>
-		      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-		  </span>
-		  <span class="3-area">
-		      <h2>Небольшая площадь</h2>
+		      <p class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+		  </div>
+		  <div class="3-area">
+		      <h3 class="title">Небольшая площадь</h3>               <!--заголовки h3-->
 		      <p>-№3-</p>
-		      <p>Все достопримечательности находятся очень близко</p>
-		  </span>
-		  <span class="4-road">
-		      <h2>Красивая дорога</h2>
+		      <p class="text">Все достопримечательности находятся очень близко</p>
+		  </div>
+		  <div class="4-road">
+		      <h3 class="title">Красивая дорога</h3>             <!--заголовки h3-->
 		      <p>-№4-</p>
-		      <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-		  </span>
-		  <span class="5-tourists">
-		      <h2>Мало туристов</h2>
+		      <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+		  </div>
+		  <div class="5-tourists">
+		      <h3 class="title">Мало туристов</h3>               <!--заголовки h3-->
 		      <p>-№5-</p>
-		      <p>Большинство едет в Гранд Каньон и толпится там</p>
-		  </span>
+		      <p class="text">Большинство едет в Гранд Каньон и толпится там</p>
+		  </div>
 	   </section>
 	   <section class="find-info">
-	      <h2>Заинтересовались?</h2>
+	      <h2 class="title">Заинтересовались?</h2>
 		  <p class="appointment-form">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-		  <p class="appointment-form">Поиск гостиницы в Седоне</p>
-		  <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post"> <!-- мы формы не проходили еще -->
-	          <p class="appointment-form">
+		  <a class="button find-button" href="find-hotel.html">Поиск гостиницы в Седоне</a>    <!--теперь ссылка-->
+		  <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+			  <p class="appointment-form">
 			     Дата заезда:
 			     <input type="text" name="date-in" value="" placeholder="24 апреля 2017">
 			  </p>
@@ -89,8 +89,11 @@
 			     Дети:
 			     <input type="text" name="children" value="" placeholder="0">
 			  </p>
-			  <button class="button" type="submit">Найти</button>
+		     <button class="button" type="submit">Найти</button>
 		  </form>
+	   </section>
+	   <section class="map">	   <!--карта-->
+	     <h2 class="visually-hidden">Карта</h2>
 	   </section>
 	</main>
 	
