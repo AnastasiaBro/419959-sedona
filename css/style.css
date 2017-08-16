@@ -1,0 +1,28 @@
+body {
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+    font-family: "PT Sans", sans-serif;
+}
+
+.site-navigation {
+    font-weight: bold;
+}
+
+.title .catalog-category{
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.title2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.title3 .price-form{
+	font-size: 16px;
+}
+
+.sort {
+	font-size: 12px;
+}
