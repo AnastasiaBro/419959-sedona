@@ -65,11 +65,12 @@
 		   </fieldset>
 		</form>
 		<form class="price-form" action="https://echo.htmlacademy.ru" method="post">
-	          <p class="price-form">
+	          <p class="title3">
 			     Стоимость в сутки (Р):
-			     <!--input type="text" name="date-in" value="" placeholder="24 апреля 2017"-->
+			  </p>	 
+			     от 0<input type="range" min="0" max="3000">до 3000
 				 <img src="img/filter-button.svg" alt="Фильтр">   <!--фильтр-->
-			  </p>
+			  
 			  <button class="button" type="submit">Показать</button>
 		</form>
 		</section>
@@ -79,9 +80,10 @@
 		    <div class="sorting">
 			   <ul>
 			      <li class="title">Найдено: 3</li>
-			      <li class="sorting-current"><a href="price.html">По цене</a></li>
-				  <li><a href="type.html">По типу</a></li>
-				  <li><a href="top.html">По рейтингу</a></li>
+				  <li class="sort">Сортировка</li>
+			      <li class="sort sorting-current"><a href="price.html">По цене</a></li>
+				  <li class="sort"><a href="type.html">По типу</a></li>
+				  <li class="sort"><a href="top.html">По рейтингу</a></li>
 			   </ul> 
 			</div>
 			<img src="img/icon-up-dir.svg" alt="Вверх">   <!--вверх-->
@@ -95,82 +97,97 @@
 			    <!-- первый элемент -->
 		       <li class="catalog-item">
 			    <h3>
-			     <a href="catalog.item">
-				    <span class="catalog-category">Amara resort&spa</span>
-					<span class="catalog-item-title">Гостиница</span>
-				 </a>
-			    </h3>
+			      <a href="catalog-item">
+				    <span class="catalog-category">Amara resort&spa </span>
+				  </a>
+				</h3>
+				
+				  <p class="catalog-item-top">
+			       <a href="catalog-item.html">
+			         <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
+					  <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
+					   <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
+					    <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
+				   </a>
+			      </p>
+				
 			    <p class="catalog-item-image">
 			      <a href="catalog-item.html">
 			         <img src="img/amara.jpg" width="135" height="90" alt="Amara resort&spa">     <!--первый отель-->
 				  </a>
 			    </p>
+				
 			    <p class="catalog-item-price">
-			     <b>от 4 000 р.</b>
+				 Гостиница
+			     от 4 000 р.<br>
 			     <a class="button" href="#">Подробнее</a>
 				 <a class="button" href="#">Забронировать</a>
+				 Рейтинг: 8,5
 			    </p>
-			    <p class="catalog-item-top">
-			     <a href="catalog-item.html">
-			         <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
-					  <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
-					   <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
-					    <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
-				 </a>
-			    </p>
+			    
 			   </li>
 			   
 			    <!-- второй элемент -->
 			   <li class="catalog-item">
 			    <h3>
-			     <a href="catalog.item">
+			     <a href="catalog-item">
 				    <span class="catalog-category">Desert quail inn</span>
-					<span class="catalog-item-title">Мотель</span>
 				 </a>
-			    </h3>
-			    <p class="catalog-item-image">
-			      <a href="catalog-item.html">
-			         <img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">   <!--второй отель-->
-				  </a>
-			    </p>
-			    <p class="catalog-item-price">
-			     <b>от 3 000 р.</b>
-			     <a class="button" href="#">Подробнее</a>
-				 <a class="button" href="#">Забронировать</a>
-			    </p>
-			    <p class="catalog-item-top">
+				</h3>
+				
+				<p class="catalog-item-top">
 			     <a href="catalog-item.html">
 			          <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
 					   <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
 					    <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
 				 </a>
 			    </p>
+				
+			    <p class="catalog-item-image">
+			      <a href="catalog-item.html">
+			         <img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">   <!--второй отель-->
+				  </a>
+			    </p>
+				
+			    <p class="catalog-item-price">
+				 Мотель
+			     от 3 000 р.<br>
+			     <a class="button" href="#">Подробнее</a>
+				 <a class="button" href="#">Забронировать</a>
+				 Рейтинг: 8,9
+			    </p>
+			    
 			   </li>
 			   
 			    <!-- третий элемент -->
 			   <li class="catalog-item">
 			    <h3>
-			     <a href="catalog.item">
+			      <a href="catalog-item">
 				    <span class="catalog-category">Villas at poco diablo</span>
-					<span class="catalog-item-title">Апартаменты</span>
-				 </a>
-			    </h3>
-			    <p class="catalog-item-image">
-			      <a href="catalog-item.html">
-			         <img src="img/villas.jpg" width="135" height="90" alt="Villas at poco diabl">     <!--третий отель-->
 				  </a>
-			    </p>
-			    <p class="catalog-item-price">
-			     <b>от 2 000 р.</b>
-			     <a class="button" href="#">Подробнее</a>
-				 <a class="button" href="#">Забронировать</a>
-			    </p>
-			    <p class="catalog-item-top">
+				</h3>
+				
+				<p class="catalog-item-top">
 			     <a href="catalog-item.html">
 			         <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
 					   <img src="img/star.svg" alt="Звездочка">  <!--звездочка-->
 				 </a>
 			    </p>
+				
+			    <p class="catalog-item-image">
+			      <a href="catalog-item.html">
+			         <img src="img/villas.jpg" width="135" height="90" alt="Villas at poco diabl">     <!--третий отель-->
+				  </a>
+			    </p>
+				
+			    <p class="catalog-item-price">
+				 Апартаменты
+			     от 2 000 р.<br>
+			     <a class="button" href="#">Подробнее</a>
+				 <a class="button" href="#">Забронировать</a>
+				 Рейтинг: 9,2
+			    </p>
+			    
 			   </li> 
 			  </ul>	
 		</section>
