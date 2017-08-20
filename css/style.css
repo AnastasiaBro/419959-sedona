@@ -5,24 +5,24 @@ body {
     font-family: "PT Sans", sans-serif;
 }
 
-.site-navigation, .appointment-item {      <!--шрифт для навигации и для формы даты поездки-->
+.site-navigation, .appointment-item {      /*шрифт для навигации и для формы даты поездки*/
     font-weight: bold;
 }
 
-.title, .catalog-category, .hashtag {       <!--шрифт для заголовков-строки index 28, 31, 39, 44, 49, 55, 60, 65, 70, 78, 96, 106, sedona-catalog 82, 101, 134, 166, 197>
+.title, .catalog-category, .hashtag {       /*шрифт для заголовков-строки index 28, 31, 39, 44, 49, 55, 60, 65, 70, 78, 96, 106, sedona-catalog 82, 101, 134, 166, 197*/
 	font-size: 21px;
 	font-weight: bold;
 }
 
-.title2 {                           <!--шрифт для заголовка "заинтересовались"-->
+.title2 {                           /*шрифт для заголовка "заинтересовались"*/
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.title3 {                        <!--шрифт для "инфраструктура, тип жилья и стоимость в сутки"-->
+.title3 {                        /*шрифт для "инфраструктура, тип жилья и стоимость в сутки"*/
 	font-size: 16px;
 }
 
-.sort {                         <!---шрифт для сортировки->
+.sort {                         /*шрифт для сортировки*/
 	font-size: 12px;
 }
