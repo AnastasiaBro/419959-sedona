@@ -1,17 +1,77 @@
 body {
-    font-size: 14px;
-    color: black;
-    font-weight: normal;
-    font-family: "PT Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal;  /*400*/
+	color: #000000;   /*черный*/
+	text-transform: uppercase;   /*прописные символы*/
+	
+	background-color: #f2f2f2;  /*серый*/
 }
 
-.site-navigation, .appointment-item {      /*шрифт для навигации и для формы даты поездки*/
-    font-weight: bold;
+a {
+	text-decoration: none;  /*без подчеркивания*/
 }
 
-.title, .catalog-category, .hashtag {       /*шрифт для заголовков-строки index 28, 31, 39, 44, 49, 55, 60, 65, 70, 78, 96, 106, sedona-catalog 82, 101, 134, 166, 197*/
+.main-navigation, .appointment-item {      /*шрифт для навигации и формы даты поездки*/
+    font-weight: bold;  /*жирный шрифт*/
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.site-navigation {
+	list-style: none;   /*без маркеров*/
+}
+
+.site-navigation a {
+	color: #000000;        /*покой*/
+}
+
+.site-navigation a:hover {  
+	color: #81b3d2;   /*наведение - голубой*/
+}
+
+.site-navigation a:focus { 
+	color: #000000;   /*нажатие - черный прозрачный*/
+	opacity: 0.3;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.title-sedona, .title, .title2, .text {
+	text-align: center;
+}
+
+.title-sedona {
 	font-size: 21px;
+	line-height: 26px;    /*между строк 26px*/
 	font-weight: bold;
+}
+
+.title, .hashtag {       /*шрифт для заголовков*/
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.index-columns {
+	background-color: #ffffff;
+}
+
+.1-real-city, .2-bridge {           /*цвет фона не видно в итоге*/
+	background-color: #81b3d2;
+}
+
+.3-area, .4-road, .5-tourists {
+	background-color: #eeeeee;
+}
+
+.interesting {
+	background-color: #ffffff;
 }
 
 .title2 {                           /*шрифт для заголовка "заинтересовались"*/
@@ -19,10 +79,204 @@ body {
 	font-weight: bold;
 }
 
+.button {
+	font: inherit;  /*наследует свойство родит. элемента*/
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase; 
+	
+	border: none;
+}
+
+.find-button {
+	background-color: #766357;
+}
+
+.find-button:hover {
+	background-color: #604e43;
+}
+
+.find-button:active {                     /*непонятно - для навигации были hover, focus и просто состояние покоя, а здесь вместо focus будет active?*/
+	color: rgba(255,255,255,0.3);
+	background-color: #503e33;
+}
+
+.find {
+	background-color: #81b3d2;
+}
+
+.find:hover {
+	background-color: #669ec0;
+}
+
+.find:active {
+	color: rgba(255,255,255,0.3);
+	background-color: #5496bd;
+}
+
+.appointment-item input {
+	font: inherit;
+	
+	font-weight: bold;  /*жирный шрифт*/
+	color: #000000;
+	background-color: #f2f2f2;
+}
+
+.appointment-item input:hover {  
+	background-color: #ebebeb;
+}
+
+.appointment-item input:focus {
+	background-color: #ffffff;
+	border: 1px;
+	border-color: #e5e5e5;
+}
+
+.footer-social {
+	text-align: center;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.social-button {
+	color: #ffffff;
+}
+
+.footer-copyright {
+	text-align: center;
+}
+/*
+.logo:hover {
+	color: #81b3d2;
+}
+
+.logo:focus {
+	color: #c9c8c8;
+}
+*/
+
+.modal {
+	color: #ffffff;
+}
+
+.inner-page {
+	background-color: #ffffff;
+}
+
+.filter, .catalog-list, .sort, .title {
+	list-style: none;
+}
+
+.inner-page .site-navigation-current a {   /*находимся на странице*/
+	color: #766357;
+}
+
+.inner-page .title {
+	text-align: left;
+	font-size: 21px;
+	line-height: 26px;    /*между строк 26px*/
+	font-weight: bold;
+}
+
 .title3 {                        /*шрифт для "инфраструктура, тип жилья и стоимость в сутки"*/
 	font-size: 16px;
+	line-height: 21px;
 }
 
 .sort {                         /*шрифт для сортировки*/
 	font-size: 12px;
+}
+
+.sorting a {
+	text-decoration: underline;
+	color: rgba(0,0,0,0.3);
+}
+
+.sorting a:hover {
+	color: #81b3d2
+}
+
+.sorting a:focus {
+	color: #000000;
+	text-decoration: none;
+}
+
+.sorting .sorting-current a{
+	color: #81b3d2;
+	text-decoration: none;
+}
+
+.button1 {                             /*забронировать*/
+	color: #ffffff;
+	background-color: #81b3d2;
+	
+}
+
+.button1:hover {                            
+	background-color: #669ec0;
+}
+
+.button1:active {                            
+	background-color: #5496bd;
+	color: rgba(255,255,255,0.3);
+}
+
+.button2 {                              /*подробнее*/
+	color: #ffffff;
+	background-color: #766357;
+}
+
+.button2:hover {                             
+	background-color: #604e43;
+}
+
+.button2:active {                             
+	background-color: #503e33;
+	color: rgba(255,255,255,0.3);
+}
+
+.catalog-category, .inner-page .title {   /*amara и другие: покой, наведение и нажатие*/
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.catalog-category:hover {
+	color: #81b3d2;
+}
+
+.catalog-category:active {
+	color: rgba(0,0,0,0.3);
+}
+
+.filter fieldset {  /*нет рамки у инфраструктуры и типа жилья*/
+	border: none;
+}
+
+.filter-option {
+	font-size: 14px;
+	line-height: 21px;
+	/*color: #ffffff;*/
+}
+
+.options {
+	list-style: none;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+	color: #ffffff;
+}
+
+.filter-input:disabled + label {
+	color: #6a6a6a;
+}
+
+.footer-copyright .text {
+	color: #000000;
 }
