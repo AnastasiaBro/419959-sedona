@@ -62,11 +62,11 @@ a {
 	background-color: #ffffff;
 }
 
-.1-real-city, .2-bridge {           /*цвет фона не видно в итоге*/
+.real-city, .bridge {           
 	background-color: #81b3d2;
 }
 
-.3-area, .4-road, .5-tourists {
+.area, .road, .tourists {
 	background-color: #eeeeee;
 }
 
@@ -98,7 +98,7 @@ a {
 	background-color: #604e43;
 }
 
-.find-button:active {                     /*непонятно - для навигации были hover, focus и просто состояние покоя, а здесь вместо focus будет active?*/
+.find-button:active {                     
 	color: rgba(255,255,255,0.3);
 	background-color: #503e33;
 }
@@ -192,7 +192,8 @@ a {
 }
 
 .sorting a {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	border-bottom: 1px dotted #81b3d2;
 	color: rgba(0,0,0,0.3);
 }
 
@@ -202,7 +203,7 @@ a {
 
 .sorting a:focus {
 	color: #000000;
-	text-decoration: none;
+	border-bottom: none;
 }
 
 .sorting .sorting-current a{
