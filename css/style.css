@@ -66,7 +66,7 @@ a {
 	background-color: #81b3d2;
 }
 
-.area, .road, .tourists {
+.area-road-tourists {
 	background-color: #eeeeee;
 }
 
@@ -313,5 +313,257 @@ body {
 	padding: 0;
 	/* Временно для сетки */
 	min-height: 56px;
+	/*background-color: green;*/
+}
+
+.main-navigation ul {
+	margin: 0;
+}
+
+.main-navigation {                      
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  /* Временно для сетки */
+  min-height: 56px;
+  /*background-color: blue;*/
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+  position: absolute; 
+  left: 50%;                             /*центровка*/
+  margin-left: -69px;
+  background-color: yellow;
+  
+  /* Временно для сетки */
+  /*display: block;*/
+}
+
+.site-navigation-left {
+  width: 528px;                          /*здесь брать от второй направляющей или от первой? сейчас от второй*/
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;                      /*без маркеров*/
+  
+  /* Временно для сетки */
+  min-height: 56px;
+  background-color: red;
+}
+
+.site-navigation-right {
+  width: 528px;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  
+  /* Временно для сетки */
+  min-height: 56px;
+  background-color: red;
+}
+
+.main-navigation .container {
+	width: 1056px;                        /*расстояние от второй до предпоследней направляющей, как в демке барбершопа*/
+	margin: 0 auto;
+	padding: 0 72px;                      /*72px - от первой до второй направляющей*/
+	background-color: blue;
+	opacity: 0.2;
+	
+	display: flex;
+	justify-content: space-between;       /*вроде на этом макете необязательно*/
+}
+
+.main-container {
+	width: 1200px;                        
+	margin: 0 auto;
+	padding: 0 0;   
+}
+
+.content-sedona {
+  width: 1200px;
+  height: 508px;
+  background-color: green;
+  
+  /* Временно для сетки */
+  display: block;
+}
+
+.main-title {
+	width: 1200px;
+	height: 216px;
+	background-color: red;
+	
+	/* Временно для сетки */
+	display: block;
+}
+
+.first-point {
+	display: flex;
+	justify-content: space-between;
+	
+	/* Временно для сетки */
+	min-height: 256px;
+	/*background-color: blue;*/
+}
+
+.real-city {
+	width: 400px;
+	
+	/* Временно для сетки */
+	min-height: 256px;
+	/*background-color: orange;*/
+}
+
+.first-point-picture {
+	width: 800px;
+	height: 256px;
+	
+	/* Временно для сетки */
 	background-color: green;
+}
+.features-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+  
+	/* Временно для сетки */
+	min-height: 330px;
+	background-color: yellow;
+}
+
+.feature-item {
+	width: 400px;
+	
+	/* Временно для сетки */
+	min-height: 330px;
+	background-color: red;
+}
+
+.second-point {
+	display: flex;
+	justify-content: space-between;
+	
+	/* Временно для сетки */
+	min-height: 256px;
+	/*background-color: blue;*/
+}
+
+.second-point-picture {
+	width: 800px;
+	height: 256px;
+	
+	/* Временно для сетки */
+	background-color: green;
+}
+
+.bridge {
+	width: 400px;
+	
+	/* Временно для сетки */
+	min-height: 256px;
+	background-color: orange;
+}
+
+.third-point {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+  
+	/* Временно для сетки */
+	min-height: 256px;
+	background-color: yellow;
+}
+
+.area-road-tourists {
+	width: 400px;
+	
+	/* Временно для сетки */
+	min-height: 256px;
+	background-color: red;
+}
+
+.interesting {
+	width: 1200px;
+	height: 291px;
+	margin: 0 auto;
+	padding: 0 0;   
+	
+	/* Временно для сетки */
+	display: block;
+	background-color: blue;
+}
+
+.find-hotel-button {
+	/*position: relative;*/
+	width: 568px;
+	height: 86px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -86px;
+	background-color: yellow;
+}
+
+.forms {
+	width: 568px;
+	height: 395px;
+	position: absolute;
+	left: 50%;
+	margin-left: -284px;
+	background-color: red;
+}
+
+.modal-map {
+	width: 1200px; 
+	height: 593px;
+	/*background-color: orange;*/
+}
+
+.main-footer {
+	padding: 0;
+	background-color: transparent;
+	margin-top: -120px;
+	
+	/*Временно для сетки*/
+	min-height: 120px;
+}
+
+.main-footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hashtag {
+	width: 400px;
+	margin: 0;
+	
+	/*Временно для сетки*/
+	min-height: 120px;
+	background-color: orange;
+}
+
+.footer-social {
+	width: 400px;
+	
+	/*Временно для сетки*/
+	min-height: 120px;
+	background-color: blue;
+}
+
+.footer-copyright {
+	width: 400px;
+	margin: 0;
+	
+	/*Временно для сетки*/
+	min-height: 120px;
+	background-color: red;
 }
