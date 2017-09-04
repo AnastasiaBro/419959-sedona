@@ -384,12 +384,12 @@ body {
 }
 
 .content-sedona {
-  width: 1200px;
-  height: 508px;
-  background-color: green;
+	width: 1200px;
+	height: 508px;
   
-  /* Временно для сетки */
-  display: block;
+	/* Временно для сетки */
+	display: block;
+	/*background-color: green;*/
 }
 
 .main-title {
@@ -423,7 +423,7 @@ body {
 	height: 256px;
 	
 	/* Временно для сетки */
-	background-color: green;
+	/*background-color: green;*/
 }
 .features-list {
 	display: flex;
@@ -435,7 +435,7 @@ body {
   
 	/* Временно для сетки */
 	min-height: 330px;
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 
 .feature-item {
@@ -443,7 +443,7 @@ body {
 	
 	/* Временно для сетки */
 	min-height: 330px;
-	background-color: red;
+	/*background-color: red;*/
 }
 
 .second-point {
@@ -460,7 +460,7 @@ body {
 	height: 256px;
 	
 	/* Временно для сетки */
-	background-color: green;
+	/*background-color: green;*/
 }
 
 .bridge {
@@ -468,7 +468,7 @@ body {
 	
 	/* Временно для сетки */
 	min-height: 256px;
-	background-color: orange;
+	/*background-color: orange;*/
 }
 
 .third-point {
@@ -481,7 +481,7 @@ body {
   
 	/* Временно для сетки */
 	min-height: 256px;
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 
 .area-road-tourists {
@@ -489,7 +489,7 @@ body {
 	
 	/* Временно для сетки */
 	min-height: 256px;
-	background-color: red;
+	/*background-color: red;*/
 }
 
 .interesting {
@@ -500,7 +500,7 @@ body {
 	
 	/* Временно для сетки */
 	display: block;
-	background-color: blue;
+	/*background-color: blue;*/
 }
 
 .find-hotel-button {
@@ -510,7 +510,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -86px;
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 
 .forms {
@@ -519,7 +519,7 @@ body {
 	position: absolute;
 	left: 50%;
 	margin-left: -284px;
-	background-color: red;
+	/*background-color: red;*/
 }
 
 .modal-map {
@@ -548,7 +548,147 @@ body {
 	
 	/*Временно для сетки*/
 	min-height: 120px;
+	/*background-color: orange;*/
+}
+
+.footer-social {
+	width: 400px;
+	
+	/*Временно для сетки*/
+	min-height: 120px;
+	/*background-color: blue;*/
+}
+
+.footer-copyright {
+	width: 400px;
+	margin: 0;
+	
+	/*Временно для сетки*/
+	min-height: 120px;
+	/*background-color: red;*/
+}
+
+/*Страница каталога*/
+
+.inner-page {
+	
+	/*Временно для сетки*/
+	background-image: url('../img/sedona-hotels.png');
+	background-size: auto auto;   /*размеры фона исходные*/        
+	background-repeat: no-repeat;
+	background-position: center top;
+	opacity: 0.3;
+}
+
+.main-container {
+	width: 1200px;                        
+	margin: 0 auto;
+	padding: 0 0;   
+}
+
+.filters {
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	
+	/*Временно для сетки*/
+	min-height: 217px;
+	/*background-color: red;*/
+	background-image: url('../img/filter-background.jpg');
+	background-size: auto auto; 
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.two-columns {
+	width: 528px;
+	height: 217px;
+	margin-left: 72px;
+	background-color: blue;
+}
+
+.third-column {
+	width: 328px;
+	height: 217px;
+	margin-right: 72px;
+	background-color: blue;
+}
+
+.sorting {
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	height: 87px;
+	margin: 0;
+	padding: 0; 
+	
+	/*Временно для сетки*/
+	/*background-color: green;*/
+}
+
+.sorting-menu {
+	width: 528px; 
+	margin: 0;
+	padding: 0;
+	margin-left: 72px;                            	/*не отображается этот блок :( */
+
+	list-style: none;
+	
+	/*Временно для сетки*/
+	height: 87px;
+	background-color: blue;
+}
+
+.switch {
+	width: 241px;
+	margin-right: 72px;
+	/*Временно для сетки*/
+	min-height: 87px;
+	background-color: red;
+}
+
+.catalog-list {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+	/*Временно для сетки*/
+	min-height: 453px;
+	background-color: green;
+}
+
+.catalog-item {
+	width: 1200px;
+	
+	/*Временно для сетки*/
+	min-height: 151px;
 	background-color: orange;
+}
+
+.main-footer {                                   /*футер вообще не отображается на этой странице, его части куда-то поехали :( */
+	padding: 0;
+	margin: 0;
+	background-color: white;
+	margin-top: -120px;
+	
+	/*Временно для сетки*/
+	min-height: 120px;
+	background-color: green;
+}
+
+.main-footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hashtag {
+	width: 400px;
+	
+	
+	/*Временно для сетки*/
+	min-height: 120px;
+	background-color: grey;
 }
 
 .footer-social {
@@ -567,3 +707,4 @@ body {
 	min-height: 120px;
 	background-color: red;
 }
+

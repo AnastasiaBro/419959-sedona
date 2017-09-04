@@ -6,29 +6,39 @@
 	<title>Каталог</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style2.css" rel="stylesheet">
 </head>
 
 <body class="inner-page">
+	<div class="wrapper">
 	<header class="main-header">
 		<a class="main-header-logo">
 			<img src="img/index-logo.png" width="138" height="70" alt="Логотип Седона">
 		</a>
 		<nav class="main-navigation">
-			<ul class="site-navigation">
-				<li><a href="info.html">Информация</a></li>                             <!--ссылки-->
-				<li><a href="photo-video.html">Фото и видео</a></li>
+			<div class="container">
+			<ul class="site-navigation-left">
+		   <!-- 
+				<li><a href="info.html">Информация</a></li>                           
+				<li><a href="photo-video.html">Фото и видео</a></li>  
+			-->
+			</ul>
+			<ul class="site-navigation-right">
+			<!--
 				<li><a href="map.html">Карта штата</a></li>
 				<li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+			-->
 			</ul>
+			</div>
 		</nav>
 	</header>
 	
-	<main class="container">
+	<main class="main-container">
 		<section class="filters">
-			<h2 class="visually-hidden">Гостиницы</h2>                                 <!--скрытая подпись-->
+		<!--<h2 class="visually-hidden">Гостиницы</h2>-->
+			<div class="two-columns">
+			<!--<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 			
-			<form class="filter" method="get" action="https://echo.htmlacademy.ru">     <!--форма с label-->
 			<img src="img/filter-background.png" width="1200" height="562" alt="Задний фон">
 				<fieldset>
 					<legend class="title3">Инфраструктура:</legend>
@@ -36,21 +46,21 @@
 						<li>
 							<p class="filter-option">
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="pool" id="pool" checked>
-								<!--img src="img/checkbox-on.svg" alt="Галочка"-->
+								
 								<label for="pool" class="filter-input-checkbox">Бассейн</label>
 							</p>
 						</li>
 						<li>
 							<p class="filter-option">
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="parking" id="parking">
-								<!--img src="img/checkbox-off.svg" alt="Нет галочки"-->
+								
 								<label for="parking" class="filter-input-checkbox">Парковка</label>
 							</p>
 						</li>
 						<li>
 							<p class="filter-option">
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="inet" id="inet">
-								<!--img src="img/checkbox-off.svg" alt="Нет галочки"-->
+								
 								<label for="inet" class="filter-input-checkbox">Wi-Fi</label>
 							</p>
 						</li>
@@ -62,64 +72,78 @@
 						<li>
 							<p class="filter-option">
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="hotel" id="hotel" checked>
-								<!--img src="img/checkbox-on.svg" alt="Галочка"-->
+								
 								<label for="hotel">Гостиница</label>
 							</p>
 						</li>
 						<li>
 							<p class="filter-option">
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="motel" id="motel" checked>
-								<!--img src="img/checkbox-on.svg" alt="Галочка"-->
+								
 								<label for="motel">Мотель</label>
 							</p>
 						</li>
 						<li>
 							<p class="filter-option">
 								<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="apartments" id="apartments" checked>
-								<!--img src="img/checkbox-on.svg" alt="Галочка"-->
+								
 								<label for="apartments">Апартаменты</label>
 							</p>
 						</li>
 					</ul>
 				</fieldset>
 			</form>
-			<form class="price-form" action="https://echo.htmlacademy.ru" method="post">      <!--форма с label-->
+			-->
+			</div>
+			
+			<div class="third-column">
+			<!--
+			<form class="price-form" action="https://echo.htmlacademy.ru" method="post">  			
 				<p class="title3">
 					<label for="cost">Стоимость в сутки (Р):</label>
 					от 0<input type="range" min="0" max="3000" id="cost">до 3000
-					<!--img src="img/filter-button.svg" alt="Фильтр"-->
+					
 				</p>
-				<button class="button" type="submit">Показать</button>                        <!--кнопка-->
+				<button class="button" type="submit">Показать</button>                      
 			</form>
+			-->
+			</div>
 		</section>
 		
 		<section class="sorting">
-			<h2 class="visually-hidden">Сортировка</h2>                                       <!--скрытая надпись-->
-			<div class="sorting">
-				<ul>
+		<!--<h2 class="visually-hidden">Сортировка</h2>  -->                                    
+			<ul class="sorting-menu>
+				<!--
 					<li class="title">Найдено: 3</li>
 					<li class="sort">Сортировка:</li>
-					<li class="sort sorting-current"><a href="price.html">По цене</a></li>        <!--ссылки-->
+					<li class="sort sorting-current"><a href="price.html">По цене</a></li>       
 					<li class="sort"><a href="type.html">По типу</a></li>
 					<li class="sort"><a href="top.html">По рейтингу</a></li>
-				</ul>
+				-->
+			</ul>
+			
+			<div class="switch">
+			<!--
+				<img src="img/icon-up-dir.svg" alt="Вверх">
+				<img src="img/icon-down-dir.svg" alt="Вниз">
+			-->
 			</div>
-			<img src="img/icon-up-dir.svg" alt="Вверх">
-			<img src="img/icon-down-dir.svg" alt="Вниз">
 		</section>
 		
 		<section class="catalog">
-			<h2 class="visually-hidden">Список типов жилья</h2>                               <!--скрытая надпись-->
+			<!--<h2 class="visually-hidden">Список типов жилья</h2>-->                           
 			<ul class="catalog-list">
 			
 				<!-- первый элемент -->
 				<li class="catalog-item">
-					<a href="catalog-item.html">                                              <!--ссылка - картинка и заголовок-->
+				<!--
+					<a href="catalog-item.html">  			
 						<p class="catalog-item-image">
 							<img src="img/amara.jpg" width="135" height="90" alt="Amara resort&spa">
 						</p>
-						<h3>                                         
-							<span class="catalog-category">Amara resort&spa </span>
+				
+						<h3 class="catalog-category">                                         
+							<span>Amara resort&spa </span>
 						</h3>
 					</a>
 					<div class="catalog-item-price">
@@ -127,7 +151,7 @@
 						<p>от 4 000 р.</p>
 					</div>
 					<div>	
-						<a class="button button1" href="#">Подробнее</a>              <!--ссылки-->	
+						<a class="button button1" href="#">Подробнее</a>              
 						<a class="button button2" href="#">Забронировать</a>
 					</div>
 					<div class="catalog-item-top">
@@ -137,11 +161,13 @@
 						<img src="img/star.svg" alt="Звездочка">
 						<p>Рейтинг: 8,5</p>
 					</div>
+				-->
 				</li>
 				
 				<!-- второй элемент -->
 				<li class="catalog-item">
-					<a href="catalog-item.html">                        <!--ссылка - картинка и заголовок-->
+				<!--
+					<a href="catalog-item.html">                        
 						<p class="catalog-item-image">
 							<img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
 						</p>
@@ -154,7 +180,7 @@
 						<p>от 3 000 р.</p>
 					</div>
 					<div>	
-						<a class="button button1" href="#">Подробнее</a>                 <!--ссылки-->	
+						<a class="button button1" href="#">Подробнее</a>                 	
 						<a class="button button2" href="#">Забронировать</a>
 					</div>
 					<div class="catalog-item-top">
@@ -163,11 +189,13 @@
 						<img src="img/star.svg" alt="Звездочка">
 						<p>Рейтинг: 8,9</p>
 					</div>
+				-->
 				</li>
 				
 				<!-- третий элемент -->
 				<li class="catalog-item">
-					<a href="catalog-item.html">       <!--ссылка - картинка и заголовок-->
+				<!--
+					<a href="catalog-item.html">       
 						<p class="catalog-item-image">
 							<img src="img/villas.jpg" width="135" height="90" alt="Villas at poco diabl">
 						</p>
@@ -180,7 +208,7 @@
 						<p>от 2 000 р.</p>
 					</div>
 					<div> 
-						<a class="button button1" href="#">Подробнее</a>                  <!--ссылки--> 
+						<a class="button button1" href="#">Подробнее</a>                
 						<a class="button button2" href="#">Забронировать</a>
 					</div>
 					<div class="catalog-item-top">
@@ -188,31 +216,39 @@
 						<img src="img/star.svg" alt="Звездочка">
 						<p>Рейтинг: 9,2</p>
 					</div>
+				-->
 				</li>
 			</ul>
 		</section>
 	</main>
 	
 	<footer class="main-footer">
-		<p class="hashtag">#Visitsedona</p>
-		<div class="footer-social">
-			<ul>
-				<li>
-					<a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер">Твиттер</a>
-				</li>                                                                                            <!--ссылки-->
-				<li>
-					<a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Твиттер">Фейсбук</a>
-				</li>
-				<li>
-					<a class="social-button" href="#"><img src="img/youtube.svg" alt="Ютуб">Ютуб</a>
-				</li>
-			</ul>
+		<div class="container">
+			<p class="hashtag">#Visitsedona</p>
+			<div class="footer-social">
+				<ul>
+				<!--
+					<li>
+						<a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер">Твиттер</a>
+					</li>                                                                                        
+					<li>
+						<a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Твиттер">Фейсбук</a>
+					</li>
+					<li>
+						<a class="social-button" href="#"><img src="img/youtube.svg" alt="Ютуб">Ютуб</a>
+					</li>
+				-->
+				</ul>
+			</div>
+			<a class="footer-copyright logo" href="https://htmlacademy.ru/intensive/htmlcss">
+			<!--	
+				<p class="text">website by</p>
+				<img src="img/logo-htmlacademy.svg" alt="Академия" width="150">  
+			-->
+			</a>
 		</div>
-		<a class="footer-copyright logo" href="https://htmlacademy.ru/intensive/htmlcss">
-			<p class="text">website by</p>
-			<img src="img/logo-htmlacademy.svg" alt="Академия" width="150">
-		</a>
 	</footer>
+	</div>
 </body>
 
 </html>
