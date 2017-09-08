@@ -67,9 +67,7 @@ a {
 .main-header {
 	margin: 0;
 	padding: 0;
-	/* Временно для сетки */
-	/*min-height: 56px;*/
-	/*background-color: green;*/
+	height: 56px;
 }
 
 .main-navigation, .appointment-item {      /*шрифт для навигации и формы даты поездки*/
@@ -86,6 +84,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 56px;
 }
 
 .main-header-logo {
@@ -94,10 +94,6 @@ a {
   position: absolute; 
   left: 50%;                            
   margin-left: -69px;
-  /*background-color: yellow;*/
-  
-  /* Временно для сетки */
-  /*display: block;*/
 }
 
 .main-navigation .container {
@@ -115,7 +111,8 @@ a {
 	list-style: none;   /*без маркеров*/
 	display: flex;
 	flex-wrap: wrap;
-	width: 480px;
+	justify-content: space-between;
+	/*width: 480px;*/
 	margin: 0;
 	padding: 0;
   
@@ -128,12 +125,15 @@ a {
 
 .site-navigation-left a{
 	display: block;
-	width: 240px;
+	
+	margin-right: 147px;
+	
 	padding-top: 14px;
 	padding-bottom: 16px;
 	padding-left: 0px;
 	padding-right: 0px;
 	
+	height: 5px;
 
 	vertical-align: middle;
 	color: #000000;        /*покой*/
@@ -141,12 +141,16 @@ a {
 
 .site-navigation-right a {
 	display: block;
-	width: 240px;
+	
+	margin-left: 160px;
+	
 	padding-top: 14px;
 	padding-bottom: 16px;
 	padding-left: 0px;
 	padding-right: 0px;
 	text-align: right;
+	
+	height: 5px;
 
 	vertical-align: middle;
 	color: #000000;        /*покой*/
@@ -487,6 +491,7 @@ a {
 	left: 50%;
 	margin-left: -284px;
 	background-color: #ffffff;
+	box-shadow: 0 7px 15px 0px rgba(0,0,0,0.15);
 }
 
 .container-form {
@@ -495,89 +500,120 @@ a {
 	width: 458px;
 	height: 285px;
 	
-	background-color: green;
-	opacity: 0.3;
+	/*background-color: green;
+	opacity: 0.3;*/
 }
 
-.date-in-container {
+.formline, .formline-adult-child {
 	display: flex;
 	flex-wrap: no-wrap;
 	justify-content: space-between;
-	margin-top: 0;
-	padding: 0;
-	width: 458px;
-	height: 38px;
-	background-color: yellow;
-}
-
-.date-out-container {
-	display: flex;
-	flex-wrap: no-wrap;
-	justify-content: space-between;
-	margin-top: 29px;
-	padding: 0;
-	width: 458px;
-	height: 38px;
 	
-	background-color: yellow;
-}
-
-.adult-child-container {
-	display: flex;
-	flex-wrap: no-wrap;
-	justify-content: space-between;
-	margin-top: 29px;
+	align-items: center;
+	margin-bottom: 30px;
 	padding: 0;
 	width: 458px;
-	height: 38px;
+	height: 37px;
 	
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 
-.appointment-item label {
+.formline-adult-child {
+	margin-top: 31px;            /*в макете разный отступ между 1,2 и 2,3 строчками*/
+}
+
+.formline label {
+	/*display: block;
+	vertical-align: top;*/
+	
 	margin: 0;
 	padding: 0;
+	text-align: center;
 	width: 112px;
-	height: 38px;
-	background-color: red;
+	height: 37px;
+	/*background-color: red;*/
 }
 
-.appointment-item input {
-	margin: 0;
+.formline-inputzone {
+	display: flex;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+	/*flex-basis: 346px;*/
+	/*align-content: flex-end;*/
+	
+	margin-right: 0;
 	padding: 0;
+	/*width: 346px;
+	height: 38px;*/
+	
+}
+
+label {
+	font-weight: bold;
+}
+
+.formline-inputzone input {
+	margin-right: 0;
+	padding: 0;
+	
 	width: 346px;
-	height: 38px;
-	background-color: blue;
+	height: 37px;
+	border: none;
+	background-color: #f2f2f2;
+	margin-right: 0px;
+	padding-left: 10px;
 }
 
-.adult-child-container input {	
-	margin: 0;
+input::-webkit-input-placeholder { 
+	color: black; 
+	font-weight: bold;
+	text-transform: uppercase; 
+}
+
+.formline-adult-child input {	
+	margin-right: 0;
 	padding: 0;
-	width: 38px;
-	height: 38px;
-	background-color: blue;
+	width: 37px;
+	height: 37px;
+	/*background-color: blue;*/
+	text-align: center;
 }
 
 .calendar {
 	position: absolute;
-	width: 38px;
-	height: 38px;
+	width: 36px;
+	height: 36px;
 	right: 0;
-	top: 0;
+	top: 1px;
+	background: none;
+	border: none;
 }
 
 .calendar2 {
 	position: absolute;
-	width: 38px;
-	height: 38px;
+	width: 36px;
+	height: 36px;
 	right: 0;
-	top: 67;
+	top: 68px;
+	background: none;
+	border: none;
 }
 
 .minus, .plus {
 	margin: 0;
-	width: 38px;
-	height: 38px;
+	width: 37px;
+	height: 37px;
+	background-color: #f2f2f2;
+	border: none;
+	color: #a9a9a9;
+	font-size: 22px;
+	font-weight: bold;
+	
+}
+
+.minus {
+	font-size: 32px;         /*для красоты*/
+	padding-top: 0px;
 }
 
 /*.appointment-item input { */
@@ -631,7 +667,7 @@ a {
 	bottom: 0;
 	left: 0;
 	
-	padding-top: 15px; 
+	padding-top: 17px; 
 	padding-bottom: 15px; 
 	
 	padding-left: 195px;
@@ -670,49 +706,35 @@ a {
 .main-footer {
 	margin: 0;
 	padding: 0;
-	
-	/*Временно для сетки*/
-	/*max-height: 120px;*/
+	position: relative; 
+	z-index: 1;
+	height: 120px;
 }
 
 .main-footer .container {
 	display: flex;
 	justify-content: space-between;
-	/*max-height: 120px;*/
 	vertical-align: center;
+	flex-basis: 0;
+	flex-grow: 1;
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .hashtag {
-	width: 400px;
-	margin: 0;
-	
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	
 	text-align: center;
-	
-	padding-top: 46px;                               /*по критерию 3.8 в footer должна быть центровка, а тут не совсем*/
-	padding-bottom: 48px;
-	
-	background-color: rgba(255, 255, 255, 0.9);
-	/*background-color: orange;*/
-	
-	/*Временно для сетки*/
-	/*min-height: 120px;*/
+	margin-left: 133px;
+	margin-top: 46px;                               
+	margin-bottom: 48px;
 }
 
 .footer-social {
 	text-align: center;
-	
-	width: 400px;
-	margin: 0;
-	background-color: rgba(255, 255, 255, 0.9);
-	/*background-color: red;*/
-	/*padding-top: 36px;*/
-	
-	/*Временно для сетки*/
-	/*min-height: 120px;*/
+	margin-top: 1px;
+	margin-left: 28px;
 }
 
 .footer-social ul {
@@ -751,14 +773,9 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 400px;
-	margin: 0;
+	margin-bottom: 1px;
+	margin-right: 100px;
 	text-align: center;
-	
-	/*Временно для сетки*/
-	/*min-height: 120px;*/
-	
-	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .logo .text {
