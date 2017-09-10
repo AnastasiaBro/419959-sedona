@@ -509,7 +509,7 @@ a {
 	margin-top: 31px;            /*в макете разный отступ между 1,2 и 2,3 строчками*/
 }
 
-.formline label {
+.formline label, .formline-adult-child label {
 	/*display: block;
 	vertical-align: top;*/
 	
@@ -546,7 +546,7 @@ label {
 	height: 37px;
 	border: none;
 	background-color: #f2f2f2;
-	padding-left: 10px;
+	padding-left: 0px;
 	outline: none;
 	
 }
@@ -562,24 +562,35 @@ label {
 
 input::-webkit-input-placeholder { 
 	font: inherit;
+	
 	color: black; 
 	font-weight: bold;
 	text-transform: uppercase; 
 }
 
+.formline input::-webkit-input-placeholder { 
+	padding-left: 13px;
+}
+	
 .formline-adult-child input {	
 	font: inherit;
 	
-	padding: 0;
+	padding-left: 0px;
 	width: 37px;
 	height: 37px;
 	/*background-color: blue;*/
 	text-align: center;
 }
 
-.formline-adult-child child {	
-	/*margin-left: 10px;
-	padding-left: 10px;*/
+.adult {
+	
+}
+
+.child {
+	margin-left: 25px;
+	margin-right: 0;
+	padding-left: 0px;
+	
 }
 
 .calendar {
@@ -591,7 +602,7 @@ input::-webkit-input-placeholder {
 	border: none;
 	background-color: #f2f2f2;
 	
-	/*outline: none;*/
+	outline: none;
 	
 }
 
@@ -604,11 +615,24 @@ input::-webkit-input-placeholder {
 	border: none;
 	background-color: #f2f2f2;
 	
-	/*outline: none;*/
+	outline: none;
 	
 }
 
-.calendar::before, .calendar2::before {
+.calendar path, .calendar2 path {
+	opacity: 0.3;
+}
+
+.calendar:hover path, .calendar2:hover path {
+	opacity: 1;
+}
+
+.calendar:focus path, .calendar2:focus path {
+	opacity: 1;
+	fill: #81b3d2;
+}
+
+/*.calendar::before, .calendar2::before {
 	content: "";
 	background-image: url('../img/calendar.svg');        	
 	position: absolute;
@@ -621,15 +645,20 @@ input::-webkit-input-placeholder {
 	width: 21px;
 	height: 22px;
 	
-}
+}*/
 
-.calendar::before:hover {                                  /*не работает*/
+
+/*.calendar:hover::before, .calendar2:hover::before {                                 
 	opacity: 1;
 }
 
-.calendar::before:hover path {
+.calendar:hover::before path,  .calendar2:hover::before path {
 	fill: #81b3d2;
-}
+}*/
+
+
+
+/*#81b3d2*/
 
 .minus, .plus {
 	margin: 0;
@@ -649,11 +678,6 @@ input::-webkit-input-placeholder {
 	font-size: 32px;         /*для красоты*/
 	padding-top: 0px;
 	margin-left: 23px;
-}
-
-.child {
-	margin-left: 40px;
-	margin-right: 0;
 }
 
 .minus:hover, .plus:hover {
@@ -864,8 +888,13 @@ input::-webkit-input-placeholder {
 	list-style: none;
 }
 
-.inner-page .site-navigation-current a {   /*находимся на странице*/
+.site-navigation-current a {   /*находимся на странице*/
 	color: #766357;
+}
+
+.site-navigation-current a:hover, .site-navigation-current a:focus {
+	color: #766357;
+	opacity: 1;
 }
 
 .inner-page .title {
@@ -884,16 +913,21 @@ input::-webkit-input-placeholder {
 
 /* чекбокс и фильтр */
 
+fieldset {
+	padding: 0;
+	/*margin: 0;*/
+}
+
 .filter-option {
 	display: block;
 }
 .filter-input-checkbox {
 	position: absolute;
-	left: -99px;
+	left: -9999999px;
 }
 .filter-label-checkbox {
 	display: block;
-	padding-left: 40px;
+	padding-left: 45px;
 	/*outline: 1px dotted red;*/
 	background-position: 5px center;
 	background-repeat: no-repeat;
@@ -904,11 +938,15 @@ input::-webkit-input-placeholder {
 }
 
 .filter-input-checkbox:checked + .filter-label-checkbox {
-  background-image: url('../img/checkbox-on.svg');
+	background-image: url('../img/checkbox-on.svg');
 }
 
-.filter-input-checkbox:disabled path {             /*не работает*/
-	fill: #6a6a6a;
+.filter-input-checkbox:disabled + .filter-label-checkbox {             
+	background-image: url('../img/checkbox-off1.svg');
+}
+
+.filter-input-checkbox:checked:disabled + .filter-label-checkbox {
+	background-image: url('../img/checkbox-on1.svg');
 }
 
 .two-columns {
@@ -934,7 +972,7 @@ input::-webkit-input-placeholder {
 .infrastructure {
 	/*background-color: khaki;*/
 	
-	vertical-align: center;
+	/*vertical-align: center;*/
 	
 	margin: 0;
 	padding-left: 0px;
@@ -947,7 +985,7 @@ input::-webkit-input-placeholder {
 	/*background-color: pink;*/
 	
 	margin: 0;
-	margin-right: 115px;
+	margin-right: 135px;
 	padding-top: 25px; 
 	
 	/*vertical-align: center;*/
@@ -1269,7 +1307,11 @@ body {
 	background: none;
 	border: none;
 	vertical-align: middle;
+	height: 11px;
 	text-align: right;
+	padding-top: 0;
+	margin-top: 38px;
+	margin-bottom: 38px;
 	padding-right: 0;
 	padding-left: 12px;
 	outline: none;
@@ -1283,19 +1325,17 @@ body {
 	fill: #81b3d2;
 }
 
-.up:hover path, .down:hover path {
+.up:hover path {
 	fill: #231f20;
 }
 
-.up:focus path, .down:focus path {
+.up:focus path {
 	fill: #81b3d2;
 }
 
-/*
 .up:active path, .down:active path {
 	fill: #81b3d2;
 }
-*/
 
 .catalog-list {
 	width: 1200px;
