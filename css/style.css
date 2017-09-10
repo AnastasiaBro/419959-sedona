@@ -547,7 +547,17 @@ label {
 	border: none;
 	background-color: #f2f2f2;
 	padding-left: 10px;
+	outline: none;
 	
+}
+
+.formline-inputzone input:hover {
+	background-color: #ebebeb;
+}
+
+.formline-inputzone input:focus {
+	background-color: #ffffff;
+	outline: 2px solid #e5e5e5;
 }
 
 input::-webkit-input-placeholder { 
@@ -567,7 +577,10 @@ input::-webkit-input-placeholder {
 	text-align: center;
 }
 
-
+.formline-adult-child child {	
+	/*margin-left: 10px;
+	padding-left: 10px;*/
+}
 
 .calendar {
 	position: absolute;
@@ -578,14 +591,7 @@ input::-webkit-input-placeholder {
 	border: none;
 	background-color: #f2f2f2;
 	
-}
-
-.calendar::before, .calendar2::before {
-	content: "";
-	background-image: url('img/calendar.svg');        	/*не работает*/
-	
-	width: 21px;
-	height: 22px;
+	/*outline: none;*/
 	
 }
 
@@ -598,6 +604,31 @@ input::-webkit-input-placeholder {
 	border: none;
 	background-color: #f2f2f2;
 	
+	/*outline: none;*/
+	
+}
+
+.calendar::before, .calendar2::before {
+	content: "";
+	background-image: url('../img/calendar.svg');        	
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	opacity: 0.3;
+	width: 21px;
+	height: 22px;
+	
+}
+
+.calendar::before:hover {                                  /*не работает*/
+	opacity: 1;
+}
+
+.calendar::before:hover path {
+	fill: #81b3d2;
 }
 
 .minus, .plus {
@@ -609,6 +640,7 @@ input::-webkit-input-placeholder {
 	color: #a9a9a9;
 	font-size: 22px;
 	font-weight: bold;
+	outline: none;
 	
 	
 }
@@ -622,6 +654,14 @@ input::-webkit-input-placeholder {
 .child {
 	margin-left: 40px;
 	margin-right: 0;
+}
+
+.minus:hover, .plus:hover {
+	color: black;
+}
+
+.minus:focus, .plus:focus {
+	color: #81b3d2;
 }
 
 
@@ -844,6 +884,33 @@ input::-webkit-input-placeholder {
 
 /* чекбокс и фильтр */
 
+.filter-option {
+	display: block;
+}
+.filter-input-checkbox {
+	position: absolute;
+	left: -99px;
+}
+.filter-label-checkbox {
+	display: block;
+	padding-left: 40px;
+	/*outline: 1px dotted red;*/
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	background-image: url('../img/checkbox-off.svg');
+	cursor: pointer;
+	user-select: none;
+	font-weight: normal;
+}
+
+.filter-input-checkbox:checked + .filter-label-checkbox {
+  background-image: url('../img/checkbox-on.svg');
+}
+
+.filter-input-checkbox:disabled path {             /*не работает*/
+	fill: #6a6a6a;
+}
+
 .two-columns {
 	display: flex;
 	justify-content: space-between;
@@ -852,7 +919,7 @@ input::-webkit-input-placeholder {
 	flex-grow: 1;
 	width: 528px;
 	height: 217px;
-	background-color: coral;
+	/*background-color: coral;*/
 	margin: 0;
 	padding: 0; 
 }
@@ -865,22 +932,23 @@ input::-webkit-input-placeholder {
 }
 
 .infrastructure {
-	background-color: khaki;
+	/*background-color: khaki;*/
 	
 	vertical-align: center;
 	
 	margin: 0;
+	padding-left: 0px;
 	padding-right: 0px; 
-	padding-top: 20px;
+	padding-top: 25px;
 	
 }
 
 .accommodation {
-	background-color: pink;
+	/*background-color: pink;*/
 	
 	margin: 0;
 	margin-right: 115px;
-	padding-top: 20px; 
+	padding-top: 25px; 
 	
 	/*vertical-align: center;*/
 }
@@ -892,6 +960,8 @@ input::-webkit-input-placeholder {
 	flex-direction: column;
 	text-align: left;
 	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 .options p {
@@ -920,9 +990,9 @@ input::-webkit-input-placeholder {
 	color: #ffffff;
 }
 
-.filter-input:disabled + label {
+/*.filter-input:disabled + label {
 	color: #6a6a6a;
-}
+}*/
 
 /* форма filter */
 
@@ -1102,7 +1172,7 @@ body {
 	
 	
 	height: 87px;
-	background-color: green;
+	/*background-color: green;*/
 }
 
 .sorting-list {
@@ -1131,12 +1201,12 @@ body {
 }
 
 .sort {
-	background-color: aqua;
+	/*background-color: aqua;*/
 	padding: 32px 7px;
 }
 
 .sort a {
-	display: block;
+	/*display: block;*/
 	
 
 	/*vertical-align: middle;*/
@@ -1160,6 +1230,7 @@ body {
 .sorting .sorting-current a{
 	color: #81b3d2;
 	text-decoration: none;
+	border: none;
 }
 
 
@@ -1417,4 +1488,8 @@ body {
 
 .inner-page footer {
 	border-top: 1px solid #e5e5e5;
+}
+
+.footer-copyright .text {
+	color: #000000;
 }
