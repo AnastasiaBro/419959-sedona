@@ -11,16 +11,6 @@ body {
 	background-color: #f2f2f2;  
 }
 
-body {
-	
-	/*Временно для сетки*/
-	/*background-image: url('../img/sedona-index.png');
-	background-size: auto auto;      
-	background-repeat: no-repeat;
-	background-position: center top;
-	opacity: 0.3;*/
-}
-
 html, 
 body {
 	min-width: 1200px;
@@ -29,26 +19,26 @@ body {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
+	position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
 
-  white-space: nowrap;
+	white-space: nowrap;
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .wrapper {
@@ -66,9 +56,9 @@ a {
 /* header */
 
 .main-header {
+	height: 56px;
 	margin: 0;
 	padding: 0;
-	height: 56px;
 }
 
 .main-navigation, .appointment-item {      /*шрифт для навигации и формы даты поездки*/
@@ -81,20 +71,20 @@ a {
 	margin: 0;
 }
 
-.main-navigation {                      
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 56px;
+.main-navigation { 
+	height: 56px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .main-header-logo {
-  width: 138px;
-  height: 70px;
-  position: absolute; 
-  left: 50%;                            
-  margin-left: -69px;
+	width: 138px;
+	height: 70px;
+	position: absolute; 
+	left: 50%;                            
+	margin-left: -69px;
 }
 
 .main-navigation .container {
@@ -194,12 +184,17 @@ a {
 }
 
 .main-title .text {
-	padding-top: 16px;
+	padding-top: 13px;
 	padding-left: 355px;
 	padding-right: 355px;
+	line-height: 26px;
 }
 
 /* Настоящий городок */
+
+.number {
+	line-height: 21px;
+}
 
 .first-point {
 	display: flex;
@@ -241,6 +236,7 @@ a {
 
 .real-city .number {
 	padding-left: 175px;
+	padding-top: 5px;
 	/*padding-right: 175px;*/
 }
 
@@ -318,6 +314,7 @@ a {
 .bridge {
 	width: 400px;
 	
+	
 	/* Временно для сетки */
 	/*min-height: 256px;*/
 	/*background-color: orange;*/
@@ -325,10 +322,13 @@ a {
 
 .bridge .title {
 	padding-top: 25px;
+	
 }
 
 .bridge .number {
 	padding-left: 175px;
+	padding-top: 5px;
+	
 }
 
 .bridge .text {
@@ -380,12 +380,12 @@ a {
 }
 
 .area-road-tourists .number {
-	padding-top: 2px;
+	padding-top: 5px;
 	padding-left: 174px;
 }
 
 .area-road-tourists .text {
-	padding-top: 4px;
+	padding-top: 6px;
 	padding-bottom: 45px;
 	padding-left: 68px;
 	padding-right: 68px;
@@ -406,19 +406,23 @@ a {
 }
 
 .title2 {                           /*шрифт для заголовка "заинтересовались"*/
-	padding-top: 55px;
+	padding-top: 50px;
 	/*padding-left: 452px;*/
 	font-size: 30px;
+	line-height: 36px;
 	font-weight: bold;
 	margin: 0;
 }
 
 .appointment-info {
-	padding-top: 20px;
+	padding-top: 10px;
 	/*padding-bottom: 134px;*/
 	padding-left: 382px;
 	padding-right: 382px;
 	line-height: 24px;
+	font-size: 14px;
+    font-weight: 400;
+	text-align: center;
 	
 }
 
@@ -496,17 +500,17 @@ a {
 	justify-content: space-between;
 	
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 	padding: 0;
 	width: 458px;
-	height: 37px;
+	height: 38px;
 	
 	/*background-color: yellow;*/
 }
 
 .formline-adult-child {
 	
-	margin-top: 31px;            /*в макете разный отступ между 1,2 и 2,3 строчками*/
+	margin-top: 30px;            /*в макете разный отступ между 1,2 и 2,3 строчками*/
 }
 
 .formline label, .formline-adult-child label {
@@ -517,20 +521,20 @@ a {
 	padding: 0;
 	text-align: center;
 	width: 112px;
-	height: 37px;
+	height: 38px;
 	/*background-color: red;*/
 }
 
-.formline-inputzone {
+.formline-inputzone {          /*для всех строк*/
 	display: flex;
 	flex-wrap: no-wrap;
 	justify-content: space-between;
 	
 	margin-right: 0;
 	padding: 0;
+	font-weight: bold;
 	/*width: 346px;
 	height: 38px;*/
-	
 }
 
 label {
@@ -543,7 +547,7 @@ label {
 	padding: 0;
 	
 	width: 346px;
-	height: 37px;
+	height: 38px;
 	border: none;
 	background-color: #f2f2f2;
 	padding-left: 0px;
@@ -571,32 +575,37 @@ input::-webkit-input-placeholder {
 .formline input::-webkit-input-placeholder { 
 	padding-left: 13px;
 }
+
+.formline-adult-child {
+	justify-content: start;
+}
 	
 .formline-adult-child input {	
 	font: inherit;
 	
 	padding-left: 0px;
-	width: 37px;
-	height: 37px;
+	width: 38px;
+	height: 38px;
 	/*background-color: blue;*/
 	text-align: center;
 }
 
-.adult {
-	
+.child label {
+	margin-left: 0px;
 }
 
 .child {
-	margin-left: 25px;
+	/*margin-left: 25px;*/
 	margin-right: 0;
 	padding-left: 0px;
+	padding-right: 0;
 	
 }
 
 .calendar {
 	position: absolute;
-	width: 37px;
-	height: 37px;
+	width: 38px;
+	height: 38px;
 	right: 0;
 	
 	border: none;
@@ -608,8 +617,8 @@ input::-webkit-input-placeholder {
 
 .calendar2 {
 	position: absolute;
-	width: 37px;
-	height: 37px;
+	width: 38px;
+	height: 38px;
 	right: 0;
 	top: 67px;
 	border: none;
@@ -632,52 +641,31 @@ input::-webkit-input-placeholder {
 	fill: #81b3d2;
 }
 
-/*.calendar::before, .calendar2::before {
-	content: "";
-	background-image: url('../img/calendar.svg');        	
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
-	opacity: 0.3;
-	width: 21px;
-	height: 22px;
-	
-}*/
-
-
-/*.calendar:hover::before, .calendar2:hover::before {                                 
-	opacity: 1;
-}
-
-.calendar:hover::before path,  .calendar2:hover::before path {
-	fill: #81b3d2;
-}*/
-
-
-
-/*#81b3d2*/
-
 .minus, .plus {
 	margin: 0;
-	width: 37px;
-	height: 37px;
+	width: 38px;
+	height: 38px;
 	background-color: #f2f2f2;
 	border: none;
 	color: #a9a9a9;
 	font-size: 22px;
 	font-weight: bold;
 	outline: none;
-	
-	
 }
 
 .minus {
 	font-size: 32px;         /*для красоты*/
 	padding-top: 0px;
-	margin-left: 23px;
+	margin-left: 42px;
+}
+
+.child label {
+	margin-left: 53px;
+	margin-right: 0px;
+}
+
+.formline-inputzone:nth-child(4) .minus {
+	margin-left: 27px;
 }
 
 .minus:hover, .plus:hover {
@@ -695,7 +683,7 @@ input::-webkit-input-placeholder {
 	box-sizing: border-box;
 	width: 458px;
 	display: block;
-	margin-top: 55px;
+	margin-top: 54px;
 	text-align: center;
 	
 	padding-top: 17px; 
@@ -797,7 +785,7 @@ input::-webkit-input-placeholder {
 }
 
 .social-button:focus path {
-  fill: #88b6d1;
+	fill: #88b6d1;
 }
 
 .footer-copyright {
@@ -811,6 +799,12 @@ input::-webkit-input-placeholder {
 
 .footer-copyright p {
 	padding-right: 9px;
+}
+
+.website {
+	font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
 }
 
 .logo {
@@ -830,28 +824,16 @@ input::-webkit-input-placeholder {
 }
 
 
-
-
-
-
 /* Страница каталога */
 
 .inner-page .main-container {
 	width: 1200px;                        
 	margin: 0 auto;
-	padding: 0 0; 
-	/*opacity: 0.3;*/
+	padding: 0 0;
 }
 
 .inner-page {
 	background-color: #ffffff;
-	
-	/*Временно для сетки*/
-	/*background-image: url('../img/sedona-hotels.png');*/
-	/*background-size: auto auto;        
-	background-repeat: no-repeat;
-	background-position: center top;
-	opacity: 0.3;*/
 }
 
 /* section filters */
@@ -861,13 +843,13 @@ input::-webkit-input-placeholder {
 	justify-content: space-between;
 	flex-wrap: no-wrap;
 	margin: 0 auto;
-	padding: 0 0;  /*с указанием горизонтального паддинга 72px; едет third-column вправо, пока не знаю, почему; поэтому у товаров и сортировки не меняла ничего - оставила там маргины справа и слева*/
+	padding: 0 0;
 	width: 1200px;
 	
 	/*Временно для сетки*/
 	min-height: 217px;
 	/*background-color: red;*/
-	background-image: url('../img/filter-background.jpg');
+	background-image: url("../img/filter-background.jpg");
 	background-size: auto auto; 
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -892,7 +874,7 @@ input::-webkit-input-placeholder {
 	color: #766357;
 }
 
-.site-navigation-current a:hover, .site-navigation-current a:focus {
+.site-navigation-current a:hover, .site-navigation-current a:focus, .site-navigation-current a:active {
 	color: #766357;
 	opacity: 1;
 }
@@ -915,38 +897,43 @@ input::-webkit-input-placeholder {
 
 fieldset {
 	padding: 0;
-	/*margin: 0;*/
+	margin-left: 0;
 }
 
 .filter-option {
 	display: block;
+	/*background-color: yellow;*/
+	padding-left: 0px;
+	text-align: left;
 }
 .filter-input-checkbox {
 	position: absolute;
 	left: -9999999px;
+	padding-left: 0px;
 }
 .filter-label-checkbox {
 	display: block;
-	padding-left: 45px;
-	/*outline: 1px dotted red;*/
-	background-position: 5px center;
+	padding-left: 40px;
+	background-position: 0px center;
 	background-repeat: no-repeat;
-	background-image: url('../img/checkbox-off.svg');
+	background-image: url("../img/checkbox-off.svg");
 	cursor: pointer;
 	user-select: none;
 	font-weight: normal;
+	/*background-color: pink;*/
+	
 }
 
 .filter-input-checkbox:checked + .filter-label-checkbox {
-	background-image: url('../img/checkbox-on.svg');
+	background-image: url("../img/checkbox-on.svg");
 }
 
 .filter-input-checkbox:disabled + .filter-label-checkbox {             
-	background-image: url('../img/checkbox-off1.svg');
+	background-image: url("../img/checkbox-off1.svg");
 }
 
 .filter-input-checkbox:checked:disabled + .filter-label-checkbox {
-	background-image: url('../img/checkbox-on1.svg');
+	background-image: url("../img/checkbox-on1.svg");
 }
 
 .two-columns {
@@ -957,7 +944,6 @@ fieldset {
 	flex-grow: 1;
 	width: 528px;
 	height: 217px;
-	/*background-color: coral;*/
 	margin: 0;
 	padding: 0; 
 }
@@ -966,29 +952,23 @@ fieldset {
 	width: 328px;
 	height: 217px;
 	margin-left: 200px;
-	/*background-color: grey;*/
+	/*padding-left: 1px;*/
 }
 
 .infrastructure {
-	/*background-color: khaki;*/
-	
-	/*vertical-align: center;*/
-	
 	margin: 0;
 	padding-left: 0px;
 	padding-right: 0px; 
-	padding-top: 25px;
-	
+	padding-top: 27px;
+	/*background-color: lime;*/
+	text-align: left;
+	/*vertical-align: center;*/
 }
 
 .accommodation {
-	/*background-color: pink;*/
-	
 	margin: 0;
 	margin-right: 135px;
-	padding-top: 25px; 
-	
-	/*vertical-align: center;*/
+	padding-top: 27px;
 }
 
 .options {
@@ -1003,7 +983,7 @@ fieldset {
 }
 
 .options p {
-	margin-top: 10px;
+	margin-top: 11px;
 	padding-left: 0px;
 }
 
@@ -1015,7 +995,6 @@ fieldset {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
-	/*color: #ffffff;*/
 }
 
 .inner-page .filter-option, .inner-page .text {
@@ -1028,16 +1007,11 @@ fieldset {
 	color: #ffffff;
 }
 
-/*.filter-input:disabled + label {
-	color: #6a6a6a;
-}*/
-
 /* форма filter */
 
 body {
 	font-weight: 400;
 	font-family: "PT Sans", Arial, sans-serif;
-
 }
 
 .filter-range {
@@ -1047,14 +1021,16 @@ body {
 
 	color: #ffffff;
 	text-transform: uppercase;
+	/*background-color: pink;*/
 }
 
 .filter-range-title {
 	margin-bottom: 9px;
 
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 16px;
 	line-height: 21px;
+	padding-left: 1px;
 }
 
 .price-controls {
@@ -1086,8 +1062,9 @@ body {
 	display: inline-block;
 
 	font-size: 14px;
-	line-height: 31px;
-	vertical-align: top;
+	line-height: 21px;
+	vertical-align: bottom;
+	font-weight: 400;
 
 	cursor: pointer;
 }
@@ -1165,7 +1142,8 @@ body {
 	
 
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 21px;
+	font-weight: 400;
 	color: #ffffff;
 	text-transform: uppercase;
 
@@ -1187,18 +1165,17 @@ body {
 
 .sort {                         /*шрифт для сортировки*/
 	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
 }
 
 .sorting {
 	display: flex;
 	justify-content: space-between;
 	width: 1200px;
-	/*height: 87px;*/
+	height: 86px;
 	margin: 0;
-	padding: 0; 
-	
-	/*Временно для сетки*/
-	/*background-color: green;*/
+	padding: 0;
 }
 
 .sorting-menu {
@@ -1209,8 +1186,7 @@ body {
 	flex-wrap: wrap;
 	
 	
-	height: 87px;
-	/*background-color: green;*/
+	height: 86px;
 }
 
 .sorting-list {
@@ -1226,32 +1202,34 @@ body {
 }
 
 .find-sort {
-	/*background-color: red;*/
-	/*white-space: wrap;*/
 	width: 134px;
 	margin-left: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .find-sort .title {
 	margin-top: 30px;
 	margin-bottom: 30px;
-	
 }
 
 .sort {
-	/*background-color: aqua;*/
-	padding: 32px 7px;
+	padding-top: 36px;
+	padding-bottom: 34px;
+	padding-left: 7px;
+	padding-right: 7px;
 }
 
-.sort a {
-	/*display: block;*/
-	
+.sorting-current {
+	margin-left: 10px;
+}
 
-	/*vertical-align: middle;*/
+.sort:nth-child(4) a {
+	padding-right: 0px;
+	
 }
 
 .sorting a {
-	/*text-decoration: underline;*/
 	border-bottom: 1px dotted #81b3d2;
 	color: rgba(0,0,0,0.3);
 }
@@ -1271,8 +1249,10 @@ body {
 	border: none;
 }
 
-
-
+.sorting .sorting-current a:active {
+	color: #81b3d2;
+}
+	
 /* 3 поля карточек */
 
 .catalog-category, .inner-page .title {   /*amara и другие: покой, наведение и нажатие*/
@@ -1297,10 +1277,8 @@ body {
 	text-align: right;
 	display: flex;
 	justify-content: flex-end;
-	
-	/*Временно для сетки*/
+
 	/*min-height: 87px;*/
-	/*background-color: red;*/
 }
 
 .up, .down {
@@ -1345,9 +1323,6 @@ body {
 	list-style: none;
 	
 	/*height: 450px;*/
-	
-	/*background-color: green;*/
-	/*opacity: 0.3;*/
 }
 
 .catalog-item {
@@ -1358,9 +1333,6 @@ body {
 	
 	height: 150px;
 	border-top: 1px solid #e5e5e5;
-	
-	
-	/*background-color: orange;*/
 }
 
 .item-left {
@@ -1370,13 +1342,12 @@ body {
 	width: 528px;
 	height: 150px;
 	margin: auto 72px;
-	/*background-color: yellow;*/
 }
 
 .catalog-item-image {
-	background-color: coral;
+	/*background-color: coral;*/
 	height: 90px;
-	text-align: center;             /*почему он иногда не работает?*/
+	text-align: center;             
 	margin: auto 0;
 	
 	/*padding-top: 30px;*/
@@ -1384,15 +1355,10 @@ body {
 	margin-right: 30px;
 }
 
-/*.catalog-item-image img {
-	margin: auto 0;
-	vertical-align: middle;
-}*/
-
 .description {
 	width: 363px;
 	height: 90px;
-	/*background-color: thistle;*/
+
 	text-align: left;
 	
 	
@@ -1406,57 +1372,50 @@ body {
 .name-item {
 	width: 363px;
 	height: 30px;
-	/*background-color: skyblue;*/
+	
 	vertical-align: center;
 	margin: 0;
+	/*background-color: pink;*/
 }
 
 .name-item h3 {
-	margin-top: -5px;                       /*тут как-то нехорошо получилось*/
+	margin-top: -5px;              
 	padding-top: 0;
 }
 
 .catalog-item-price {
 	width: 363px;
 	height: 30px;
-	/*background-color: teal;*/
+	
 	vertical-align: center;
 	margin: 0;
 	white-space: nowrap;
 	display: flex;
-	/*justify-content: space-between;*/
-	
 }
 
 .catalog-item-price p {
 	padding-left: 0;
-	margin-top: -5px;
-	
+	margin-top: -4px;
 }
 
-.frase1 {                           /*пришлось сделать обертки для p*/
+.frase1 {                           
 	width: 111px;
+	line-height: 21px;
 }
 
 .frase2 {
 	margin-left: 6px;
+	line-height: 21px;
 }
 
 .buttons-item {
 	width: 363px;
-	height: 30px;
-	/*background-color: lime;*/
+	height: 27px;
+	
 	vertical-align: center;
 	margin: 0;
 	white-space: nowrap;
 	display: flex;
-	/*justify-content: space-between;*/
-	
-	
-}
-
-.button2 {
-	margin-left: 6px;
 }
 
 .button1 {                             /*забронировать*/
@@ -1465,7 +1424,7 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: bold;
-	padding: 5px 17px;
+	padding: 3px 17px;
 }
 
 .button1:hover {                            
@@ -1483,8 +1442,8 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: bold;
-	padding: 5px 17px;
-	/*margin-left: 6px;*/
+	padding: 3px 17px;
+	margin-left: 6px;
 }
 
 .button2:hover {                             
@@ -1501,7 +1460,6 @@ body {
 	height: 90px;
 	margin: auto auto;
 	margin-right: 72px;
-	/*background-color: yellow;*/
 	text-align: right;
 	display: flex;
 	justify-content: space-between;
@@ -1510,21 +1468,22 @@ body {
 
 .catalog-item-top p {
 	vertical-align: center;
-	margin-bottom: 0;
+	text-align: center;
+	
+	margin-top: 0;
+	margin-bottom: 0px;
 	margin-left: 130px;
 	width: 111px;
 	height: 27px;
 	background-color: #f2f2f2;
-	text-align: center;
+	
 	color: #666666;
+	line-height: 21px;
 }
 
-/*.rating {
-	width: 111px;
-	height: 27px;
-	background-color: #f2f2f2;
-	text-align: right;
-}*/
+.catalog-item-top img {
+	padding-right: 1px;
+}
 
 .inner-page footer {
 	border-top: 1px solid #e5e5e5;
