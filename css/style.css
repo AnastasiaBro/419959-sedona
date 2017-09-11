@@ -163,30 +163,42 @@ a {
 	text-align: center;
 }
 
-.main-title {
-	width: 1200px;
-	height: 216px;
-	
-	background-color: #ffffff;
-	
-	/* Временно для сетки */
-	/*display: block;*/
-}
-
 .title-sedona {
 	font-size: 21px;
 	line-height: 26px;    
 	font-weight: bold;
 	margin: 0;
 	padding-top: 60px;
-	padding-left: 379px;
-	padding-right: 379px;
+	padding-left: 370px;
+	padding-right: 370px;
+}
+
+.content-sedona {
+	background-image: url("../img/layer.png"), url("../img/background-sedona.jpg");
+	background-repeat: no-repeat;
+	background-position: 0px 451px, 0 -56px;
+	
+	padding-bottom: 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.content-sedona img {
+	padding-top: 76px;
+	padding-bottom: 33px;
+}
+
+.main-title {
+	width: 1200px;
+	height: 216px;
+	
+	background-color: #ffffff;
 }
 
 .main-title .text {
 	padding-top: 13px;
-	padding-left: 355px;
-	padding-right: 355px;
+	padding-left: 354px;
+	padding-right: 354px;
 	line-height: 26px;
 }
 
@@ -216,7 +228,8 @@ a {
 
 .first-point-picture {
 	width: 800px;
-	height: 256px;
+	display: flex;
+	align-items: center;
 	
 	/* Временно для сетки */
 	/*background-color: green;*/
@@ -305,7 +318,9 @@ a {
 
 .second-point-picture {
 	width: 800px;
-	height: 256px;
+	display: flex;
+	align-items: center;
+	/*height: 256px;*/
 	
 	/* Временно для сетки */
 	/*background-color: green;*/
@@ -456,10 +471,11 @@ a {
 
 .find-button {
 	background-color: #766357;
+	width: 568px;
 	padding-top: 30px; 
 	padding-bottom: 30px;
-	padding-left: 138px;
-	padding-right: 138px;
+	/*padding-left: 138px;
+	padding-right: 138px;*/
 	white-space: nowrap;
 }
 
@@ -1357,7 +1373,7 @@ body {
 
 .description {
 	width: 363px;
-	height: 90px;
+	height: 98px;
 
 	text-align: left;
 	
@@ -1365,13 +1381,13 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	margin: auto auto;
+	margin: auto;
 	padding: 0;
 }
 
 .name-item {
 	width: 363px;
-	height: 30px;
+	/*height: 30px;*/
 	
 	vertical-align: center;
 	margin: 0;
@@ -1379,13 +1395,15 @@ body {
 }
 
 .name-item h3 {
-	margin-top: -5px;              
-	padding-top: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	/*padding-top: 0;
+	padding-bottom: 0px;*/
 }
 
 .catalog-item-price {
 	width: 363px;
-	height: 30px;
+	/*height: 30px;*/
 	
 	vertical-align: center;
 	margin: 0;
@@ -1395,7 +1413,7 @@ body {
 
 .catalog-item-price p {
 	padding-left: 0;
-	margin-top: -4px;
+	margin-top: 4px;
 }
 
 .frase1 {                           
@@ -1413,7 +1431,7 @@ body {
 	height: 27px;
 	
 	vertical-align: center;
-	margin: 0;
+	margin-bottom: 4px;
 	white-space: nowrap;
 	display: flex;
 }
@@ -1474,11 +1492,13 @@ body {
 	margin-bottom: 0px;
 	margin-left: 130px;
 	width: 111px;
-	height: 27px;
+	height: 21px;
 	background-color: #f2f2f2;
 	
 	color: #666666;
 	line-height: 21px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 
 .catalog-item-top img {
